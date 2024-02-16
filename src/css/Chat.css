@@ -1,0 +1,101 @@
+#container{
+    height: 90.6vh;
+    width: 70%;
+    background-repeat: repeat;
+    background-color: #0b141a;
+}
+#outer_container{
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets//images//bg-chat-tile-dark.png');
+}
+#inner_container{
+    height: 100%;
+    width: 100%;
+    padding: 0 50px 20px 50px;
+    background-color: #0b141aef;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #374045 #111B21;
+    backdrop-filter: blur(1.5px);
+}
+#chat_container_me .chatbubble{
+    background-color: #005C4B;
+}
+.chatbubble{
+    max-width: 65%;
+    border-radius: 5px;
+    margin: 1px 0;
+    padding: 8px 10px;
+    color: white;
+    background-color: #202C33;
+}
+.chatbubble > p{
+    font-size: small;
+}
+.chatbubble > p > h6{
+    font-size: smaller;
+    text-align: end;
+    font-weight: 500;
+    color: #99aab4;
+}
+#chat_container{
+    display: flex;
+}
+#chat_container_me{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#message_field{
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: #202C33;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    border-radius: 20px;
+}
+#message_field i{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #99aab4;
+}
+#message_field > i{
+    rotate: 360;
+    transition: 1s;
+}
+#message_field form{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+#message_field input{
+    width: 64%;
+    height: 80%;
+    padding: 12px;
+    background-color: #2A3942;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    font-size: 1.1em;
+    resize:none;
+}
+#message_field input::placeholder{
+    color: #7E8D98;
+    font-size: 1.3em;
+}
+#message_field button{
+    background-color: transparent;
+    border: none;
+}
+#message_field button img{
+    height: 30px;
+    filter: contrast(0%); 
+}
+ 

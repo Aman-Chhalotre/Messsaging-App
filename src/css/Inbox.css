@@ -1,0 +1,93 @@
+#inbox_container {
+    height: 90.6vh;
+    width: 30%;
+    border-right: 1px solid rgb(75, 75, 75);
+    background-color: #111B21;
+}
+
+#heading {
+    height: 8%;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    position: sticky;
+    background-color: #111B21;
+}
+
+#heading i {
+    background-color: #202C33;
+    color: #76868F;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#heading input {
+    width: 90%;
+    background-color: #202C33;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#heading input::placeholder {
+    color: #76868F;
+}
+
+#inbox {
+    height: 92%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #374045 #111B21;
+}
+
+#chatbox {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    background-color: #2A3942;
+    /* border-radius: 10px; */
+    align-items: center;
+}
+#chatbox:hover{
+    background-color: #2A3942;
+}
+
+#chatbox img {
+    height: 49px;
+    width: 49px;
+    margin: 0 15px 0 13px;
+    border-radius: 50%;
+}
+
+#chatbox > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+#chatbox_name {
+    width: 100%;
+    color: white;
+}
+#chatbox_name > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chatbox_name h3 {
+    font-weight: 400;
+}
+#chatbox_name > div h5{
+    color:#76868F;
+}
+
+#chatbox_name h5 {
+    font-weight: 400;
+}
